@@ -455,7 +455,7 @@ letter-spacing: 0.03em;
   .soc-link-focus{
     width: 20px;
     height: 20px;
-  fill: currentColor;
+    fill: currentColor;
 }
 
 /*.soc-link-focus:hover,
@@ -694,14 +694,35 @@ letter-spacing: 0.03em;
   background-color: rgba(0, 0, 0, 0.2);
 }
 
+.backdrop.is-hidden {
+opacity: 0;
+pointer-events: none;
+}
+
 .modal{
+  position: absolute;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%, -50%);
   height: 581px;
   width: 528px;
   background-color: var(--white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+}
+
+.modal-close{
   position: absolute;
-  top: 50%;
-  left:50%;
-  transform: translate(-50%; -50%);
+  top:0;
+  left:0;
+}
+
+.modal-close-icon{
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
+  border: 1px solid rgba(0, 0, 0, 0.1);;
+  border-radius: 50%; 
+  margin-right: 8px;
+  margin-top: 8px;
 }
