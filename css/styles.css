@@ -268,20 +268,23 @@ letter-spacing: 0.03em;
 }
 
 .title-p{
+  position:absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
     padding-top: 27px;
     padding-bottom: 27px;
     background: rgba(47, 48, 58, 0.8);
 }
 
 .dmd {
+  margin: 0px;
   font-weight: 700;
-  text-align: center;
   letter-spacing: 0.03em;
+  text-align: center;
   text-transform: uppercase;
   color: var(--white-color);
-  margin: 0px;
-  font-size: 14px;
-  line-height: 16px;
+  
 }
 
 .section {
